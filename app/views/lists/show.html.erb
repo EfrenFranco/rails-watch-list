@@ -1,8 +1,10 @@
 <div class="position-relative">
   <div class="card-category card-large">
     <h1><%= @list.name %></h1>
-  </div>
-  <span class="movie-tag"> %></span>
+    <% @list.bookmarks.each do |bookmark| %>
+    <div> <%= bookmark.movie.title %> - <%= bookmark.comment %></div>
+    <% end %>
+  <span class="movie-tag"></span>
 </div>
 <div class="container mb-5">
   <div class="d-flex justify-content-between my-4">
