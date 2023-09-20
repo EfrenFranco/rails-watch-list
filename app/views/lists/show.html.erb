@@ -1,6 +1,5 @@
 <div class="position-relative">
   <div class="card-category card-large">
-    <h1><%= @user.full_name %></h1>
     <% @list.bookmarks.each do |bookmark| %>
       <div> <%= bookmark.movie.title %> - <%= bookmark.comment %></div>
     <% end %>

@@ -6,10 +6,10 @@
         <%= simple_form_for @list do |f| %>
           <%= f.input :name, placeholder: 'Drama' %>
           <%= f.input :photo, as: :file %>
-          <%= f.submit class: 'btn btn-success' %>
+          <div class="create_buttons mb-2">
+            <%= f.submit class: 'btn btn-success' %></div>
         <% end %>
         <%= link_to "Go back to the main page", lists_path(@list), class: "btn btn-primary" %>
-
       </div>
     </div>
   </div>
